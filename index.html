@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Selector RGB</title>
+    <title>Selector RGB - Actualizado </title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,10 +14,12 @@
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-dark">
+<!-- NAVBAR - TÍTULO MODIFICADO -->
+<nav class="navbar navbar-dark bg-success"> <!-- Cambiado de bg-dark a bg-success (VERDE) -->
     <div class="container">
-        <span class="navbar-brand mb-0 h1">🎨 Selector de Color RGB</span>
+        <span class="navbar-brand mb-0 h1">
+            🎨 Selector RGB - Actualizado vía FTP 
+        </span>
     </div>
 </nav>
 
@@ -26,38 +28,38 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
 
-            <div class="card shadow-lg">
+            <div class="card shadow-lg border-success"> <!-- Borde verde -->
                 <div class="card-body">
 
                     <!-- COLOR PICKER -->
                     <div class="text-center mb-4">
                         <label class="form-label fw-bold">Selector de Color</label><br>
-                        <input type="color" id="colorPicker" value="#000000">
+                        <input type="color" id="colorPicker" value="#0080FF"> <!-- Cambiado a azul -->
                     </div>
 
-                    <!-- CONTROLES RGB -->
+                    <!-- CONTROLES RGB - VALORES INICIALES MODIFICADOS -->
                     <div class="card mb-3">
                         <div class="card-body">
 
                             <!-- ROJO -->
                             <div class="mb-3">
                                 <label class="form-label">Rojo (R)</label>
-                                <input type="range" class="form-range" min="0" max="255" id="rojo">
-                                <input type="number" class="form-control mt-1" min="0" max="255" id="rojoNum">
+                                <input type="range" class="form-range" min="0" max="255" id="rojo" value="0">
+                                <input type="number" class="form-control mt-1" min="0" max="255" id="rojoNum" value="0">
                             </div>
 
                             <!-- VERDE -->
                             <div class="mb-3">
                                 <label class="form-label">Verde (G)</label>
-                                <input type="range" class="form-range" min="0" max="255" id="verde">
-                                <input type="number" class="form-control mt-1" min="0" max="255" id="verdeNum">
+                                <input type="range" class="form-range" min="0" max="255" id="verde" value="128">
+                                <input type="number" class="form-control mt-1" min="0" max="255" id="verdeNum" value="128">
                             </div>
 
                             <!-- AZUL -->
                             <div class="mb-3">
                                 <label class="form-label">Azul (B)</label>
-                                <input type="range" class="form-range" min="0" max="255" id="azul">
-                                <input type="number" class="form-control mt-1" min="0" max="255" id="azulNum">
+                                <input type="range" class="form-range" min="0" max="255" id="azul" value="255">
+                                <input type="number" class="form-control mt-1" min="0" max="255" id="azulNum" value="255">
                             </div>
 
                         </div>
@@ -74,6 +76,15 @@
                         </div>
                     </div>
 
+                    <!-- 🔴 NUEVO: MENSAJE DE EVIDENCIA PARA FTP -->
+                    <div class="alert alert-success mt-4 text-center" role="alert">
+                        <strong>✅ ACTUALIZADO VÍA FTP</strong><br>
+                        <span style="font-size: 1.1em;">
+                            📅 26 de Febrero 2026 - Tarea Hostinger<br>
+                            👨‍🎓 Alumno: Jorge Sandoval 😊
+                        </span>
+                    </div>
+
                 </div>
             </div>
 
@@ -81,11 +92,12 @@
     </div>
 </div>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-3">
+<!-- FOOTER MODIFICADO -->
+<footer class="bg-success text-white text-center py-3"> <!-- Cambiado a verde -->
     <p class="mb-0">
-        Desarrollado por <strong>Jorge Luis Ponce Sandoval</strong><br>
-        Ingeniería en Sistemas Computacionales
+         Desarrollado por <strong>Jorge Luis Ponce Sandoval</strong><br>
+         Ingeniería en Sistemas Computacionales<br>
+        ⭐ Versión: FTP + GitHub ⭐
     </p>
 </footer>
 
